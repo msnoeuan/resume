@@ -1,21 +1,21 @@
 import { MapPin, Mail, Briefcase, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
+import profilePic from '../../public/me.JPEG';
 
 export default function Sidebar() {
   return (
     <div className="flex flex-col items-center md:items-start space-y-5 md:sticky md:top-8">
       <div className="w-56 h-72 relative rounded-[50%] overflow-hidden bg-gray-200 mb-3 mx-auto md:mx-0 shadow-sm border border-gray-100">
-        <Image 
-          src="/me.JPEG" 
-          alt="유승민 프로필 사진" 
-          fill 
+        <Image
+          src={profilePic}
+          alt="유승민 프로필 사진"
+          fill
           sizes="(max-width: 768px) 100vw, 800px"
           quality={100}
           className="object-cover object-top"
-          priority 
+          priority
         />
       </div>
-
       <div className="text-center md:text-left w-full">
         <h1 className="text-3xl font-bold text-gray-900">유승민</h1>
         <p className="text-lg text-gray-600 font-medium mb-4">Dongyang Mirae Univ.</p>
