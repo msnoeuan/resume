@@ -8,7 +8,7 @@ export default function Sidebar() {
     <div className="flex flex-col items-center md:items-start space-y-5 md:sticky md:top-8">
       <div className="w-56 h-72 relative rounded-[50%] overflow-hidden bg-gray-200 mb-3 mx-auto md:mx-0 shadow-sm border border-gray-100">
         <Image
-          src={`${basePath}/me.JPEG`}
+          src={`${basePath}/me.jpg`}
           alt="유승민 프로필 사진"
           fill
           sizes="(max-width: 768px) 100vw, 800px"
