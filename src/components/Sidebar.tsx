@@ -1,4 +1,4 @@
-import { MapPin, Mail, Briefcase, MessageCircle } from 'lucide-react';
+import { MapPin, Mail, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 
 const basePath = process.env.NODE_ENV === 'production' ? '/resume' : '';
@@ -32,7 +32,7 @@ export default function Sidebar() {
         </div>
         <div className="flex items-center gap-3">
           <Mail size={18} className="text-gray-400" />
-          <a href="mailto:your.email@example.com" className="hover:text-stone-500 transition-colors">Email</a>
+          <a href="mailto:msnoeuan@gmail.com" className="hover:text-stone-500 transition-colors">Email</a>
         </div>
         <div className="flex items-center gap-3">
           <svg
