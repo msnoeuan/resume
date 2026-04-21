@@ -1,13 +1,14 @@
 import { MapPin, Mail, Briefcase, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
-import profilePic from '../../public/me.JPEG';
+
+const basePath = process.env.NODE_ENV === 'production' ? '/resume' : '';
 
 export default function Sidebar() {
   return (
     <div className="flex flex-col items-center md:items-start space-y-5 md:sticky md:top-8">
       <div className="w-56 h-72 relative rounded-[50%] overflow-hidden bg-gray-200 mb-3 mx-auto md:mx-0 shadow-sm border border-gray-100">
         <Image
-          src={profilePic}
+          src={`${basePath}/me.JPEG`}
           alt="유승민 프로필 사진"
           fill
           sizes="(max-width: 768px) 100vw, 800px"
